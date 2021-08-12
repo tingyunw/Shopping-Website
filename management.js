@@ -18,7 +18,7 @@ async function add_item(){
         
         // let a = Array.from(new Uint8Array(buffer));
         // let b = Object.fromEntries(formData);
-        fetch('http://localhost:5000/db/add',{
+        fetch('https://itisashoppingwebapi.herokuapp.com/db/add',{
             method: 'post',
             headers:{   
                 'Accept': 'application/json, text/plain, */*',
