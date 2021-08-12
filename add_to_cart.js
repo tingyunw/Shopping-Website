@@ -1,6 +1,6 @@
 // $(document).ready(function(){
 
-fetch('http://localhost:5000/db/select')
+fetch('https://itisashoppingwebapi.herokuapp.com/db/select')
 .then(res => res.json()).then(res => {
     console.log(res);
     res.forEach(item => renderBody(item));
@@ -147,7 +147,7 @@ function search(){
         $(".row")[0].innerHTML = '';
         var item = document.forms["searchForm"]["searchItem"].value;
         console.log($(".row")[0]);
-        fetch('http://localhost:5000/db/search?query='+item)
+        fetch('https://itisashoppingwebapi.herokuapp.com/db/search?query='+item)
         .then(res => res.json())
         .then(res => {
             res.forEach(item => renderBody(item));
